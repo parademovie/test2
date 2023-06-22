@@ -15,17 +15,17 @@ jobs:
       - name: Checking out repo
         uses: actions/checkout@v3
       - name: Setup Chrome
-
+ 
         uses: browser-actions/setup-chrome@v1.2.0
 
       - run: |
           whereis google-chrome-stable
-          mv 66/ /opt/test1/
+          mv 11/ /opt/test1/
           ls /opt/test1/
           google-chrome https://www.baidu.com
           sudo pkill chrome
-          sudo ls ~/.config/google-chrome
-          sudo ls /home/runner/.config/google-chrome
+          #sudo ls ~/.config/google-chrome
+          #sudo ls /home/runner/.config/google-chrome
           #sudo ls -al /home
           #chmod +x ./2.sh && ./2.sh
           
