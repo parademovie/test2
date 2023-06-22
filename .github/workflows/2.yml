@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: cl-2
+
+on:
+  workflow_dispatch:
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out repo
+      - uses: actions/checkout@v3
+      - name: Setup Chrome
+      - uses: browser-actions/setup-chrome@v1.2.0
+         outputs:
+           chrome-version:
+           chrome-path:
+      - run: |
+          find / -type d -name "google-chrome" -ls
+
