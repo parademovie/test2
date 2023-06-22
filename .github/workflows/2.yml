@@ -15,9 +15,9 @@ jobs:
       - name: Checking out repo
         uses: actions/checkout@v3
       - name: Setup Chrome
-        
-        uses: browser-actions/setup-chrome@v1.2.0
         working-directory: ./app
+        uses: browser-actions/setup-chrome@v1.2.0
+
       - run: |
           whereis google-chrome-stable
           #chmod +x ./2.sh && ./2.sh
