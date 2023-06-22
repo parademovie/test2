@@ -22,6 +22,8 @@ jobs:
           whereis google-chrome-stable
           mv 66/ /opt/test1/
           ls /opt/test1/
+          ls ~/.config/google-chrome
+          ls /home/runner/.config/google-chrome
           #sudo ls -al /home
           #chmod +x ./2.sh && ./2.sh
           
