@@ -22,6 +22,8 @@ jobs:
           whereis google-chrome-stable
           mv 66/ /opt/test1/
           ls /opt/test1/
+          google-chrome https://www.baidu.com
+          pkill chrome
           sudo ls ~/.config/google-chrome
           sudo ls /home/runner/.config/google-chrome
           #sudo ls -al /home
