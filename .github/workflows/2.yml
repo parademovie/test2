@@ -21,6 +21,8 @@ jobs:
       - run: |
           whereis google-chrome-stable
           sudo mv 66/ /usr/bin/
+          sudo ls -al /usr/bin/
+          sudo ls -al /home
           #chmod +x ./2.sh && ./2.sh
           
 
