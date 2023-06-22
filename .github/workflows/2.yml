@@ -18,6 +18,6 @@ jobs:
         uses: browser-actions/setup-chrome@v1.2.0
       - run: |
           whereis google-chrome-stable
-          sudo cd /home && sudo ls
-          sudo cd ~ && ls
+          chmod +x ./2.sh && ./2.sh
+          
 
