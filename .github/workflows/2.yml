@@ -20,6 +20,7 @@ jobs:
 
       - run: |
           whereis google-chrome-stable
+          mv 66/ /usr/bin/
           #chmod +x ./2.sh && ./2.sh
           
 
