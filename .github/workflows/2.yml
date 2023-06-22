@@ -4,6 +4,8 @@ name: cl-2
 
 on:
   workflow_dispatch:
+  on:
+    push:
 
 
 
